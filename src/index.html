@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">TaskMaster</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Projetos</a>
+            <a href="#">Estatísticas</a>
+            <a href="#">Configurações</a>
+        </div>
+        <div class="user-profile" style="width: 32px; height: 32px; background: var(--primary); border-radius: 50%;"></div>
+    </nav>
+
+    <main>
+        <div class="todo-container">
+            <div class="todo-header">
+                <h1>Suas Tarefas</h1>
+                <p>Organize sua produtividade com estilo.</p>
+            </div>
+
+            <div class="todo-input-group">
+                <input type="text" placeholder="Adicionar nova tarefa...">
+                <button class="btn-add">Adicionar</button>
+            </div>
+
+            <div class="todo-list">
+                <!-- Mocked Item 1 -->
+                <div class="todo-item completed">
+                    <div class="todo-info">
+                        <div class="checkbox">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <span class="todo-text">Configurar ambiente de desenvolvimento</span>
+                    </div>
+                    <div class="todo-actions">
+                        <button class="btn-icon">✎</button>
+                        <button class="btn-icon btn-delete">🗑</button>
+                    </div>
+                </div>
+
+                <!-- Mocked Item 2 -->
+                <div class="todo-item">
+                    <div class="todo-info">
+                        <div class="checkbox"></div>
+                        <span class="todo-text">Implementar layout da Home</span>
+                    </div>
+                    <div class="todo-actions">
+                        <button class="btn-icon">✎</button>
+                        <button class="btn-icon btn-delete">🗑</button>
+                    </div>
+                </div>
+
+                <!-- Mocked Item 3 -->
+                <div class="todo-item">
+                    <div class="todo-info">
+                        <div class="checkbox"></div>
+                        <span class="todo-text">Revisar Git Flow com a equipe</span>
+                    </div>
+                    <div class="todo-actions">
+                        <button class="btn-icon">✎</button>
+                        <button class="btn-icon btn-delete">🗑</button>
+                    </div>
+                </div>
+
+                <!-- Mocked Item 4 -->
+                <div class="todo-item completed">
+                    <div class="todo-info">
+                        <div class="checkbox">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <span class="todo-text">Criar repositório no GitHub</span>
+                    </div>
+                    <div class="todo-actions">
+                        <button class="btn-icon">✎</button>
+                        <button class="btn-icon btn-delete">🗑</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Premium Task Manager. Desenvolvido para máxima performance.</p>
+    </footer>
+
+</body>
+</html>
