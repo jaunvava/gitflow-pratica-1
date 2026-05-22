@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium Task Manager</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
 
@@ -27,14 +27,17 @@
             </div>
 
             <div class="todo-input-group">
-                <input type="text" id="todo-filter-input" placeholder="Buscar tarefa...">
+                <input type="text" placeholder="Adicionar nova tarefa...">
                 <button class="btn-add">Adicionar</button>
             </div>
 
-            <div class="todo-filter-buttons">
-                <button type="button" data-filter-status="all" class="filter-btn active">Todas</button>
-                <button type="button" data-filter-status="pending" class="filter-btn">Pendentes</button>
-                <button type="button" data-filter-status="completed" class="filter-btn">Concluídas</button>
+            <div class="todo-filter-group">
+                <input id="todo-filter-input" type="text" placeholder="Filtrar tarefas...">
+                <div class="filter-buttons">
+                    <button type="button" class="filter-button active" data-filter-status="all">Todas</button>
+                    <button type="button" class="filter-button" data-filter-status="completed">Concluídas</button>
+                    <button type="button" class="filter-button" data-filter-status="pending">Pendentes</button>
+                </div>
             </div>
 
             <div class="todo-list">
@@ -96,6 +99,6 @@
     <footer>
         <p>&copy; 2026 Premium Task Manager. Desenvolvido para máxima performance.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>
