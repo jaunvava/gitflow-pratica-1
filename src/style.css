@@ -28,6 +28,17 @@ body {
     overflow-x: hidden;
 }
 
+body.light {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg-dark: #f1f5f9;
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --border: rgba(0, 0, 0, 0.1);
+    background: radial-gradient(circle at top left, #e2e8f0, #f8fafc);
+}
+
 /* Navbar */
 nav {
     position: sticky;
@@ -204,6 +215,21 @@ main {
     color: #fda4af;
     font-size: 0.95rem;
     min-height: 1.4rem;
+}
+
+.btn-theme {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-main);
+    padding: 0.5rem 0.7rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: 0.3s;
+}
+
+.btn-theme:hover {
+    background: rgba(255,255,255,0.1);
 }
 
 @keyframes spinner {
